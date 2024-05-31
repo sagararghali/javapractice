@@ -1,11 +1,16 @@
-
-
-let pattern = "";
-
-for (let i= 5;i>= 1; i--) {
-   for (let j = 5;j<= i; j--) {
-      pattern += "*";
-   }
-   pattern += "\n";
+function sagar(){
+   console.log("my name is sagar")
 }
-console.log(pattern);
+sagar()
+
+ saa=()=>{
+   alert('i am here')
+}
+
+let sap =()=>{
+   let x=5
+   let y=6
+   return x+y
+   }
+   let a=sap()
+   console.log(a)
