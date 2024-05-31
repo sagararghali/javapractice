@@ -1,40 +1,86 @@
-h1{
-
-
-    color:red
-    
+body{
+    background-color: rgb(33, 30, 30);
 }
-.bar {
+
+h1{
+    color:red;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(34, 235, 24);
+    background-color: rgb(0, 0, 0);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.bar {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+  color: transparent;
+    -webkit-text-stroke: 1px #23FF3C;
+    position: relative;
+}
+.bar::before{
+    content: "SAGAR";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #23FF3C;
+    border-right: 3px solid #23FF3C;
+    transition: 1s ease-in-out;
+}
+.bar:hover::before{
+    width: 100%;
+    filter:drop-shadow(0 0 50px #23FF3C);
+}
 .contents ul {
 list-style: none;
     display: flex;
 }
 
 .contents li{
-margin-left: 3rem;
+    margin-bottom: 1rem;
+margin-right: 5.5rem;
+}
+.contents i{
+    color: aliceblue;
+    font-size: x-large;
 }
 
- .contents a{
+.navbar a{
     text-decoration: none;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- }
- .contents a:hover{
+position: fixed;
+}
+.navbar a:hover{
     display: flex;
     justify-content: space-between;
-transition-duration: 100ms;
-    font-size: 30px;
-    color: blue;
+    transition: 300ms ease-out;
+    font-size: 25px;
+    color: #00FFD9;
+    border-bottom: 3px solid #00FFD9;
  }
 
+ .haha{
+    display: flex;
+    justify-content: right;
+    align-items:end ;
+padding:1rem;
+padding-top: 20px;
+    
+ }
+ .haha a{
+    text-decoration: none;
+    font-size: large;
+ }
+
+
+
+ 
 
 
 
