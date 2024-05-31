@@ -1,29 +1,61 @@
-/* h1{
+h1{
 
 
     color:red
     
 }
-nav{
-    margin-top: 20px;
+.bar {
     display: flex;
-    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(34, 235, 24);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-nav.button{
-    margin-top: 50px;
-    color: brown;
-    border-radius: 50px;
-} */
-* {
+
+.contents ul {
+list-style: none;
+    display: flex;
+}
+
+.contents li{
+margin-left: 3rem;
+}
+
+ .contents a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .contents a:hover{
+    display: flex;
+    justify-content: space-between;
+transition-duration: 100ms;
+    font-size: 30px;
+    color: blue;
+ }
+
+
+
+
+
+
+/* * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 body {
+    background-color: #dd1a1a;
     font-family: Arial, sans-serif;
 }
 
+.haha{
+    display: flex;
+    justify-content: space-evenly;
+
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +64,7 @@ body {
     padding: 1rem;
 }
 .navbar :hover{
-    
+
     color: #64FF24;
 }
 
@@ -47,7 +79,7 @@ body {
 }
 
 .navbar-links li {
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 
 .navbar-links a {
@@ -92,4 +124,4 @@ body {
     .navbar-links.active {
         display: flex;
     }
-}
+}  */

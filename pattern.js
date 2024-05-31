@@ -91,9 +91,9 @@ let sap =()=>{
         //     console.log("my name is sagar")
         // }
         // sagar()
-        const toggleButton = document.getElementById('navbar-toggle');
-const navbarLinks = document.getElementById('navbar-links');
+//         const toggleButton = document.getElementById('navbar-toggle');
+// const navbarLinks = document.getElementById('navbar-links');
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
+// toggleButton.addEventListener('click', () => {
+//     navbarLinks.classList.toggle('active');
+// });
