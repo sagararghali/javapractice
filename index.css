@@ -98,13 +98,13 @@ transition: 300ms ease-in-out;
     padding: 30px 15.6px 50px 40px;
     row-gap: 25px;
     transition: all .55s ease;
-}}
-.contents .sap a{
-    display: block;
 }
-
-.contents .sap .open{
-right: 0;
+.sap.active{
+right:0;   
+ }
+ .control{
+    display: flex;
+ }
 }
 
 
@@ -114,7 +114,9 @@ right: 0;
     display: flex;
     justify-content: end;
     padding-left: 15px;
+cursor:pointer;
 }
+
 }
 
     

@@ -18,13 +18,12 @@ sa=()=>{
 //    let a=sap()
 //    console.log(a)
 
-   let menu = document.querySelector('#check');
-let sap = document.querySelector('.contents .sap');
- menu.onclick=()=>{
-   menu.classlist.toggle('');
-      sap.classlist.toggle('open');
+   let a = document.getElementById('control');
+let b = document.getElementById('sap');
+a.addEventListener('click',()=>{
+b.classList.toggle('active');
 
- }
+})
 
    //             "use strict";  
         //             //to insert variable  
