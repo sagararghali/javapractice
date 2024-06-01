@@ -30,15 +30,23 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     overflow: hidden;
     color: #23FF3C;
     border-right: 3px solid #23FF3C;
+   
+
+
+
     transition: 1s ease-in-out;
 }
 .bar:hover::before{
     width: 100%;
-    filter:drop-shadow(0 0 50px #23FF3C);
+    filter:drop-shadow(0 0 20px #23FF3C);
+}
+.contents{
+    display: flex;
 }
 .contents ul {
 list-style: none;
     display: flex;
+
 }
 
 .contents li{
@@ -55,28 +63,63 @@ margin-right: 5.5rem;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 position: fixed;
+transition: 300ms ease-in-out;
+
 }
 .navbar a:hover{
     display: flex;
-    justify-content: space-between;
-    transition: 300ms ease-out;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     color: #00FFD9;
     border-bottom: 3px solid #00FFD9;
  }
 
- .haha{
-    display: flex;
-    justify-content: right;
-    align-items:end ;
-padding:1rem;
-padding-top: 20px;
-    
- }
- .haha a{
+ .btn1, .btn2 b{
     text-decoration: none;
     font-size: large;
  }
+ .contents i{
+    display:none;
+ }
+
+
+ @media (max-width:850px){
+.contents .sap {
+    position: fixed;
+  top:10.4%;
+  right: -100%;
+    width:200px;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15.6px 50px 40px;
+    row-gap: 25px;
+    transition: all .55s ease;
+}}
+.contents .sap a{
+    display: block;
+}
+
+.contents .sap .open{
+right: 0;
+}
+
+
+
+@media (max-width:850px){
+.contents i{
+    display: flex;
+    justify-content: end;
+    padding-left: 15px;
+}
+}
+
+    
+    
+ 
 
 
 

@@ -10,13 +10,21 @@ sa=()=>{
    alert('ARE YOU WANT TO SIGN IN ?');
 }
 
-let sap =()=>{
-   let x=5
-   let y=6
-   return x+y
-   }
-   let a=sap()
-   console.log(a)
+// let sap =()=>{
+//    let x=5
+//    let y=6
+//    return x+y
+//    }
+//    let a=sap()
+//    console.log(a)
+
+   let menu = document.querySelector('#check');
+let sap = document.querySelector('.contents .sap');
+ menu.onclick=()=>{
+   menu.classlist.toggle('');
+      sap.classlist.toggle('open');
+
+ }
 
    //             "use strict";  
         //             //to insert variable  
