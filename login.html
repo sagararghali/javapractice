@@ -1,11 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+  <title>Login Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+
+*{
+
+margin: 0px;
+padding: 0;
+box-sizing: border-box;
+font-family: "poppins"; 
+
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url("img3.jpeg") no-repeat;
+	background-position: center;
+}
+.box {
+	width: 420px;
+	background: transparent;
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+border: 2px solid rgba(255,255, 255, .2);
+backdrop-filter: blur(8px);
+box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.box h2{
+	font-size: 40px;
+	text-align: center;
+}
+.box .in{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+
+}
+.box input{
+		font-size: 20px;
+
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+color: #fff;
+padding: 20px 30px 20px 20px;
+}
+.box i{
+	position: absolute;
+	right: 1px;
+	top: 60%;
+	transform: translate(-50%);
+	font-size: 20px;
+}
+.remember-forget a{
+	color: #fff;
+	text-decoration: none;
+
+}
+.remember-forget a:hover {
+	text-decoration:underline;
+	
+}
+.box .sap {
+	width:100% ;
+	height: 45px;
+	background: none;
+	outline: none;
+	border-radius:40px ;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	cursor:pointer ;
+	font-weight:600 ;
+font-size: 16px;
+	color: #333;
+	background: #fff;
+}
+
+.box .register-link{
+
+font-size: 14.5px;
+text-align:center ;
+margin:20px 0 15px;
+}
+.register-link p a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+
+}
+.register-link p a:hover {
+	text-decoration:underline;
+}
+	button[type="submit"]:hover {
+      background-color: green;
+    }
+
+
+</style>
 </head>
 <body>
+
+
+<div class="box">
+<form action="/login" method="post">
+  <h2>Login </h2>
+  <div class="in">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <i class='bx bxs-user-circle'></i>
+  </div>
+  <div class="in">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <i class='bx bxs-lock'></i>
+  </div>
+  <div class ="remember-forget">
     
+      
+      <a href="#">Forget password?</a>
+
+  </div>
+  <div>
+    <button type="submit" class="sap">login</button>
+  </div>
+  <div class="register-link">
+    <p>don't have an account?            
+<a href="signup page.html">Sign up</a>
+    </p>
+  </div>
+</form>
+</div>
+
 </body>
 </html>
