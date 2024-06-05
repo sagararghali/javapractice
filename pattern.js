@@ -1,14 +1,14 @@
-function sagar(){
-   console.log("my name is sagar")
-}
-sagar()
+// function sagar(){
+//    console.log("my name is sagar")
+// }
+// sagar()
 
- saa=()=>{
-   alert('i am here');
-}
-sa=()=>{
-   alert('ARE YOU WANT TO SIGN IN ?');
-}
+//  saa=()=>{
+//    alert('i am here');
+// }
+// sa=()=>{
+//    alert('ARE YOU WANT TO SIGN IN ?');
+// }
 
 // let sap =()=>{
 //    let x=5
