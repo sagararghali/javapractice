@@ -1,7 +1,7 @@
-function sagar(){
-   console.log("my name is sagar")
-}
-sagar()
+// function sagar(){
+//    console.log("my name is sagar")
+// }
+// sagar()
 
 //  saa=()=>{
 //    alert('i am here');
