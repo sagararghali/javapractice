@@ -5,31 +5,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>login</title>
 	<style>
+		
 body{
 	background-color: rgb(248, 72, 28);
 	text-align: center;
-
+	background: url("code\ pic.png") no-repeat;
+	background-attachment: fixed;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
 }
+
 #txt ,#pass {
 border-radius: 10px;
 }
 .logpage{
-	/* display: block; */
-	align-content: center;
-background:transparent ;
-backdrop-filter:blur (8px);
+margin-top: 150px;
+background-attachment: fixed;
+width: 400px;
+height: 40vh;
+	background: transparent;
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+border: 2px solid rgba(255,255, 255, .2);
+backdrop-filter: blur(5px);
+box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
+.logpage h1{
+	color: blue;
+	font-family: 'Times New Roman', Times, serif;
+}
+.logpage label{
+font-size:larger;
+
+}
+.logpage input{
+font-size: medium;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.logpage button{
+	font-size: large;
+	font-family: 'Times New Roman', Times, serif;
+}
+.logpage button:hover{
+	background-color: green;
+	
+}
+
+
 	</style>
 </head>
 <body>
 	
 	<div class="logpage">
 		<h1>login page</h1>
-		<label for="user">Username:</label><br>
-		<input type="text" placeholder=" enter username" name="" id="txt"><br>
+		<label for="user" >Username:</label><br>
+		<input type="text" placeholder=" enter username" name="" id="txt"><br><br>
 		<label for="pass">Password:</label><br>
-		<input type="password" placeholder="  enter password" name="" id="pass"><br>
+		<input type="password" placeholder=" enter password" name="" id="pass"><br><br>
 		<button>log in</button>
+		<div class="register-link">
+			<p>don't have an account?            
+		<a href="signup page.html">Sign up</a>
+			</p>
+		  </div>
+
 	</div>
 </body>
 </html>
