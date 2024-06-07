@@ -1,7 +1,8 @@
 body{
-    background-color: rgb(33, 30, 30);
+background : url("code\ pic.png") no-repeat;
+background-attachment: fixed;
+background-position: center;
 }
-
 h1{
     color:red;
 }
@@ -11,7 +12,8 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 3, 3);
+    border-radius: 15px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .bar {
@@ -30,43 +32,38 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     overflow: hidden;
     color: #23FF3C;
     border-right: 3px solid #23FF3C;
-   
-
-
-
     transition: 1s ease-in-out;
 }
 .bar:hover::before{
     width: 100%;
     filter:drop-shadow(0 0 20px #23FF3C);
 }
-.contents{
+.navbar{
     display: flex;
 }
-.contents ul {
+.navbar ul {
 list-style: none;
     display: flex;
 
 }
 
-.contents li{
+.navbar li{
     margin-bottom: 1rem;
 margin-right: 5.5rem;
 }
-.contents i{
+.navbar i{
     color: aliceblue;
     font-size: x-large;
 }
 
-.navbar a{
+.navbar .sap a{
     text-decoration: none;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 position: fixed;
 transition: 300ms ease-in-out;
-
 }
-.navbar a:hover{
+.navbar .sap a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,43 +71,40 @@ transition: 300ms ease-in-out;
     color: #00FFD9;
     border-bottom: 3px solid #00FFD9;
  }
-
- .btn1, .btn2 b{
+ .navbar .btn a{
     text-decoration: none;
     font-size: large;
- }
- .contents i{
+}
+
+ .navbar i{
     display:none;
  }
 
-
+.sap{
+    backdrop-filter: blur(5px);
+}
  @media (max-width:850px){
-.contents .sap {
+.sap {
+    color: blue;
     position: fixed;
-  top:10.4%;
-  /* right: -100%; */
-    width:200px;
-    height: 20vh;
-    background-color: black;
+  top:12.9%;
+  right: -100%;
+    width:150px;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 15.6px 50px 40px;
     row-gap: 25px;
-    transition: all .55s ease;
+    transition: all .33s ease;
+    background: transparent;
+    backdrop-filter: blur(5px);
+
 }
-.sap.active{
-right:0;   
- }
  .control{
     display: flex;
  }
-}
-
-
-
-@media (max-width:850px){
-.contents i{
+ .navbar i{
     display: flex;
     justify-content: end;
     padding-left: 15px;
@@ -118,6 +112,18 @@ cursor:pointer;
 }
 
 }
+.sap.active{
+    right:2%;   
+     }
+     @media (max-width:410px){
+.btn button{
+    display:none ;
+}
+.sap{
+    width: 100px;
+}
+  }
+
 
     
     

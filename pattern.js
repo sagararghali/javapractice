@@ -18,12 +18,12 @@
 //    let a=sap()
 //    console.log(a)
 
-   let a = document.getElementById('control');
-let b = document.getElementById('sap');
+
+   let a = document.getElementById('control-1');
+let b = document.getElementById('sap-1');
 a.addEventListener('click',()=>{
 b.classList.toggle('active');
-
-})
+});
 
    //             "use strict";  
         //             //to insert variable  
