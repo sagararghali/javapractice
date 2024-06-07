@@ -14,7 +14,7 @@ body{
    background-position: center;
    display: flex;
    justify-content: center;
-   margin-top: 20px;
+   margin-top: 10px;
 }
 
 #txt ,#pass {
@@ -24,13 +24,13 @@ border-radius: 10px;
 margin-top: 150px;
 background-attachment: fixed;
 width: 400px;
-height: 40vh;
+height: 45vh;
 	background: transparent;
 	color: #fff;
 	border-radius: 10px;
 	padding: 30px 40px;
-border: 2px solid rgba(255,255, 255, .2);
-backdrop-filter: blur(5px);
+border: 3px solid rgba(255,255, 255, .2);
+backdrop-filter: blur(3px);
 box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 .logpage h1{
@@ -45,19 +45,28 @@ font-size:larger;
 font-size: medium;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.logpage button{
+.logpage button {
 	font-size: large;
 	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
 }
 .logpage button:hover{
 	background-color: green;
 	
 }
+.register-link {
+font-size: large;
+}
+.register-link a{
+font-size: larger;
+}
+
 
 
 	</style>
 </head>
 <body>
+
 	
 	<div class="logpage">
 		<h1>login page</h1>
@@ -65,7 +74,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 		<input type="text" placeholder=" enter username" name="" id="txt"><br><br>
 		<label for="pass">Password:</label><br>
 		<input type="password" placeholder=" enter password" name="" id="pass"><br><br>
-		<button>log in</button>
+		<button><a href="">log in</a></button>
 		<div class="register-link">
 			<p>don't have an account?            
 		<a href="signup page.html">Sign up</a>
