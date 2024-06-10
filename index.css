@@ -80,6 +80,14 @@ transition: 300ms ease-in-out;
  .navbar i{
     display:none;
  }
+  .foot{
+   display: flex;
+   justify-content: center;
+   background-color: gray;
+   padding: 25px;
+   border-radius: 10px;
+position: fixed;
+}
 
 .sap{
     backdrop-filter: blur(5px);
@@ -125,7 +133,7 @@ cursor:pointer;
 }
   }
   .container {
-    position: relative;
+    position:relative;
     box-sizing: border-box;
     width: fit-content;
     margin-right: 10px;
