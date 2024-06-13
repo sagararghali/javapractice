@@ -9,7 +9,6 @@
 // sa=()=>{
 //    alert('ARE YOU WANT TO SIGN IN ?');
 // }
-
 // let sap =()=>{
 //    let x=5
 //    let y=6
@@ -17,7 +16,6 @@
 //    }
 //    let a=sap()
 //    console.log(a)
-
 
    let a = document.getElementById('control-1');
 let b = document.getElementById('sap-1');
