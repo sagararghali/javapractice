@@ -1,27 +1,23 @@
-// function sagar(){
-//    console.log("my name is sagar")
-// }
-// sagar()
 
-//  saa=()=>{
-//    alert('i am here');
-// }
-// sa=()=>{
-//    alert('ARE YOU WANT TO SIGN IN ?');
-// }
+
 // let sap =()=>{
 //    let x=5
 //    let y=6
 //    return x+y
 //    }
-//    let a=sap()
-//    console.log(a)
+//    let p=sap()
+//    console.log(p)
 
-   let a = document.getElementById('control-1');
-let b = document.getElementById('sap-1');
-a.addEventListener('click',()=>{
-b.classList.toggle('active');
-});
+//    let g=(name)=>{
+//       console.log("hello"+ name);
+//    }
+//    g(" ram")
+
+  
+
+
+
+
 
    //             "use strict";  
         //             //to insert variable  
@@ -36,13 +32,15 @@ b.classList.toggle('active');
         
         
         // //function inside the object
-        // // let obj1={
-        // //     r:1,
-        // //     b:3,
-        // //     func:function (number){  //obj1.func(50)
-        // //         console.log("the number is:"+number);
-        // //     }
-        // // }
+        let obj1={
+            r:1,
+            b:3,
+            func:function (number){  
+               obj1.func(50)
+                console.log("the number is:"+number);
+            }
+        }
+        
         
         // //conformation window will be popup 
         // // document.addEventListener("click", function click(){
@@ -95,13 +93,9 @@ b.classList.toggle('active');
         // }
         
         
-        // function sagar(){
-        //     console.log("my name is sagar")
-        // }
-        // sagar()
-//         const toggleButton = document.getElementById('navbar-toggle');
-// const navbarLinks = document.getElementById('navbar-links');
-
-// toggleButton.addEventListener('click', () => {
-//     navbarLinks.classList.toggle('active');
+    
+//    let a = document.getElementById('control-1');
+// let b = document.getElementById('sap-1');
+// a.addEventListener('click',()=>{
+// b.classList.toggle('active');
 // });
