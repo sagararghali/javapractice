@@ -32,14 +32,14 @@
         
         
         // //function inside the object
-        let obj1={
-            r:1,
-            b:3,
-            func:function (number){  
-               obj1.func(50)
-                console.log("the number is:"+number);
-            }
-        }
+        // let obj1={
+        //     r:1,
+        //     b:3,
+        //     func:function (number){  
+        //        obj1.func(50)
+        //         console.log("the number is:"+number);
+        //     }
+        // }
         
         
         // //conformation window will be popup 
@@ -99,3 +99,13 @@
 // a.addEventListener('click',()=>{
 // b.classList.toggle('active');
 // });
+let i;
+let j;
+for( i=1;i<=5;i++)
+    {
+    for( j=i;j<=5;j++)
+        {
+    console.log("*");
+    }
+}
+console.log("hi my name is sagar")
