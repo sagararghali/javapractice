@@ -113,9 +113,12 @@
 //     alert("i am here haita ");
 // }
 
-let add=()=>{
-         let x={
-    name:"sagar"
-        }
-        console.log(x.name);
+
+
+let x={
+    name:"sagar",
+    price:999
+    show: function (){
+        console.log();
     }
+}
