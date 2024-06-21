@@ -99,13 +99,23 @@
 // a.addEventListener('click',()=>{
 // b.classList.toggle('active');
 // });
-let i;
-let j;
-for( i=1;i<=5;i++)
-    {
-    for( j=i;j<=5;j++)
-        {
-    console.log("*");
+
+// console.log("hi my name is sagar")
+
+
+// alert type.....................................
+// function show(){
+//     alert("i am ui alert");
+// }
+// document.getElementById("hi").addEventListener("click", show);
+
+// function hi(){
+//     alert("i am here haita ");
+// }
+
+let add=()=>{
+         let x={
+    name:"sagar"
+        }
+        console.log(x.name);
     }
-}
-console.log("hi my name is sagar")
