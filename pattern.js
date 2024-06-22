@@ -62,6 +62,7 @@
         // //     console.log("the value is:"+this);
         // // }}
         // // obj2.newfun();
+
         // //call back function
         // // setTimeout(() => {
         // //     console.log("i have come ");
@@ -111,14 +112,19 @@
 
 // function hi(){
 //     alert("i am here haita ");
-// }
 
+// let obj2={
+           
+//          newfun:(sap)=> {
+//             console.log("the name is:"+sap);
+//         }}
+//         obj2.newfun("sagar");
+console.log("sagar")
 
-
-let x={
-    name:"sagar",
-    price:999
-    show: function (){
-        console.log();
+let obj={
+    hi:function (name){
+        console.log("my name is sagar arghali"+name)
     }
 }
+obj.hi("sagarrrr")
+
