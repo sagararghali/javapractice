@@ -116,15 +116,17 @@
 // let obj2={
            
 //          newfun:(sap)=> {
-//             console.log("the name is:"+sap);
-//         }}
-//         obj2.newfun("sagar");
-console.log("sagar")
-
-let obj={
-    hi:function (name){
-        console.log("my name is sagar arghali"+name)
+    //             console.log("the name is:"+sap);
+    //         }}
+    //         obj2.newfun("sagar");
+    console.log("sagar")
+    
+    
+    let obj={
+        hi: (name)=>{
+            console.log("my name is sagar arghali"+name)
+        }
     }
-}
-obj.hi("sagarrrr")
+    obj.hi("sagarrrr") 
+    let half=a=> a/2;
 
