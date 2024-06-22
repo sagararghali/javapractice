@@ -119,14 +119,15 @@
     //             console.log("the name is:"+sap);
     //         }}
     //         obj2.newfun("sagar");
-    console.log("sagar")
-    
-    
-    let obj={
-        hi: (name)=>{
-            console.log("my name is sagar arghali"+name)
+  
+    let x={
+        name:"sagar",
+        exp:"30",
+        show: function(){
+
+            setTimeout(() =>{
+                console.log(`the name is ${this.name} \nthe role is ${this.exp}`)
+            }, 1000);
         }
     }
-    obj.hi("sagarrrr") 
-    let half=a=> a/2;
-
+x.show()
