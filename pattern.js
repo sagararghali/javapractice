@@ -120,14 +120,27 @@
     //         }}
     //         obj2.newfun("sagar");
   
-    let x={
-        name:"sagar",
-        exp:"30",
-        show: function(){
+//     let x={
+//         name:"sagar",
+//         exp:"30",
+//         show: function(){
+// console.log("hi ever");
+//             setTimeout(() =>{
+//                 console.log(`the name is ${this.name} \nthe role is ${this.exp}`)
+//             }, 1000);
+//         }
+//     }
+// x.show()
+let obj={
+    name:"sagar",
+    age:20,
+   show: function (){
+setTimeout(() =>{
+    console.log(`my name is ${this.name} \n my age is ${this.age}`);
 
-            setTimeout(() =>{
-                console.log(`the name is ${this.name} \nthe role is ${this.exp}`)
-            }, 1000);
-        }
+}, 1000);
     }
-x.show()
+}
+
+
+obj.show();
