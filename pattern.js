@@ -160,11 +160,18 @@ console.log(arysagar[i]);
     // array methods
     let sap=[1,2,3,4,5,6];
     console.log(sap.toString());
+
     console.log(sap.join(" and "))
-    sap.pop();
-    console.log( sap.pop());//popout last element of array
-
-
+    //pop method 
+    console.log( sap.pop());//display last element and popped it out.
+    console.log(sap);// it has display the element of array after popping out the last element of array
+    sap.pop();//it has popout last element of array without knowing user..
+    console.log(sap);// it has display the element of array after popping out the last element of array
+    console.log( sap.pop());//it has displayed last element of remaining array.after popping out
+// push method -it add new element in array in last
+let sap1=[1,2,3,4,5,6];
+let r=sap1.push(50)
+console.log(sap1,r);
 
   
 
