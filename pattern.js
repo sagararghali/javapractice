@@ -134,13 +134,42 @@
 
 
 // higher order funtion and callback function
-function add(a,b,call){
-    let sum=a+b;
-    call(sum);
-    return ()=> console.log(sum);
-    
+function add(a,b,cb){
+let c=a+b;
+cb(c)
+return ()=> console.log(c)
+
 }
-let sumfunction= add(10,20,()=>{});
-sumfunction();
+let cfunction=add(20,40,()=>{})
+cfunction();
+
+//array in js 
+
+let arymarks=[10,20,30,null,"nogiven"]
+console.log(arymarks);
+  console.log(arymarks[0]);
+  arymarks[5]="sagar"//i have seperatelly defined array5
+  console.log(arymarks[5]);//before, array5 was not defined
+ 
+
+  console.log("the length of array is",arymarks.length);
+
+  let arysagar=["my","name","is ","sagar","arghali"];
+    for  ( let i=0; i<arysagar.length; i++)  
+console.log(arysagar[i]);
+    // array methods
+    let sap=[1,2,3,4,5,6];
+    console.log(sap.toString());
+    console.log(sap.join(" and "))
+    sap.pop();
+    console.log( sap.pop());//popout last element of array
+
+
+
+  
+
+
+
+
 
 
