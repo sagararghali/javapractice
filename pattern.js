@@ -131,16 +131,16 @@
 //         }
 //     }
 // x.show()
-let obj={
-    name:"sagar",
-    age:20,
-   show: function (){
-setTimeout(() =>{
-    console.log(`my name is ${this.name} \n my age is ${this.age}`);
 
-}, 1000);
-    }
+
+// higher order funtion and callback function
+function add(a,b,call){
+    let sum=a+b;
+    call(sum);
+    return ()=> console.log(sum);
+    
 }
+let sumfunction= add(10,20,()=>{});
+sumfunction();
 
 
-obj.show();
