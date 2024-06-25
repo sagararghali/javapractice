@@ -181,6 +181,13 @@ console.log(arr1,q);//popout first element of array and display array, print pop
 let arr2=[1,2,3,4,5,6]
 let s=arr2.unshift(100)
 console.log(arr2,s);
+//delete
+delete arr2[4];//as you see in result of concat method, in address of 4 we can see empty
+console.log(arr2.length);
+//concate -more than two array can also be concatinate..
+let arr3=[12,13,14,15]
+let newarr=arr1.concat(arr2,arr3)//arr1,2,3 has been concat
+console.log(newarr);
 
 
 
