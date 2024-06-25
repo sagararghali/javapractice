@@ -156,26 +156,31 @@ console.log(arymarks);
     for  ( let i=0; i<arysagar.length; i++)  
 console.log(arysagar[i]);
     // array methods
-    let sap=[1,2,3,4,5,6];
+    let sap=[1,2,3,4,5];
     console.log(sap.toString());
-
     console.log(sap.join(" and "))
+
     //pop method 
     console.log( sap.pop());//display last element and popped it out.
     console.log(sap);// it has display the element of array after popping out the last element of array
     sap.pop();//it has popout last element of array without knowing user..
     console.log(sap);// it has display the element of array after popping out the last element of array
     console.log( sap.pop());//it has displayed last element of remaining array.after popping out
+
 // push method -it add new element in array in last
 let sap1=[1,2,3,4,5,6];
 let r=sap1.push(50)
 console.log(sap1,r);
+
 //shift method-same as pop but it pop out from first.
+let arr1=[1,2,3,4,5];
+let q=arr1.shift()
+console.log(arr1,q);//popout first element of array and display array, print popped out array
 
-
-  
-
-
+// unshift method- same as push method but it add new element in first
+let arr2=[1,2,3,4,5,6]
+let s=arr2.unshift(100)
+console.log(arr2,s);
 
 
 
