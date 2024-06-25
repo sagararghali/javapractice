@@ -207,7 +207,14 @@ arrange.reverse();
 console.log(arrange);
 
 //splice and slice
-//splice-it can be used to add new element to an array
+//splice-it can be used to delete and add new element to an array
 let num=[10,20,30,40,50,60];
-num.splice(2,3,100,200,300)// syntax= num.splice(start with,how much element to delete after,which which element to add after that)
-console.log(num);          // syntax= num.splice(kati bata start garna,taspaxi kati ota element delete garna ,kun kun element add garna)
+num.splice(2,2,100,200,300,400)// syntax= num.splice(start with,how much element to delete after,which which element to add after that)
+console.log(num);             // syntax= num.splice(kati bata start garna,taspaxi kati ota element delete garna ,kun kun element add garna)
+let deletedvalues=num.splice(2,3,100,200,300,400)
+console.log( deletedvalues);//30,40,50 aauna parna??..
+
+//slice-use ot diplay certain element of an array
+let num1=[11,22,33,55,44,66,77,88,99,10,]
+let slicemethod=num1.slice(2,7)//slice(starting index,ending index)
+console.log(slicemethod);
