@@ -185,10 +185,13 @@ console.log(arr2,s);
 delete arr2[4];//as you see in result of concat method, in address of 4 we can see empty
 console.log(arr2.length);
 //concate -more than two array can also be concatinate..
-let arr3=[12,13,14,15]
+let arr3=[2,113,64,45]
 let newarr=arr1.concat(arr2,arr3)//arr1,2,3 has been concat
 console.log(newarr);
+// sort method
+arr3.sort()
+console.log(arr3.sort());// asending order of first digit in array(like 113,2,45,64) first digits of number(1,2,4,6)
 
-
+//
 
 
