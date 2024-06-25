@@ -202,3 +202,12 @@ let arrange=[1,80,22,24,333,253]
 arrange.sort(compare);
 console.log(arrange);
 
+// reverse method - reverse array 
+arrange.reverse();
+console.log(arrange);
+
+//splice and slice
+//splice-it can be used to add new element to an array
+let num=[10,20,30,40,50,60];
+num.splice(2,3,100,200,300)// syntax= num.splice(start with,how much element to delete after,which which element to add after that)
+console.log(num);          // syntax= num.splice(kati bata start garna,taspaxi kati ota element delete garna ,kun kun element add garna)
