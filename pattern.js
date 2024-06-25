@@ -181,17 +181,24 @@ console.log(arr1,q);//popout first element of array and display array, print pop
 let arr2=[1,2,3,4,5,6]
 let s=arr2.unshift(100)
 console.log(arr2,s);
+
 //delete
 delete arr2[4];//as you see in result of concat method, in address of 4 we can see empty
 console.log(arr2.length);
+
 //concate -more than two array can also be concatinate..
 let arr3=[2,113,64,45]
 let newarr=arr1.concat(arr2,arr3)//arr1,2,3 has been concat
 console.log(newarr);
+
 // sort method
 arr3.sort()
 console.log(arr3.sort());// asending order of first digit in array(like 113,2,45,64) first digits of number(1,2,4,6)
-
-//
-
+// what if we need to arrange array in actual ascending or descending  order like 1,2,3,4,5,6 or 6,5,4,3,2,1 etc...
+let compare=(a,b)=>{
+  return a-b;// for descending we can write b-a;
+}
+let arrange=[1,80,22,24,333,253]
+arrange.sort(compare);
+console.log(arrange);
 
