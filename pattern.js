@@ -150,10 +150,8 @@ console.log(arymarks);
   console.log(arymarks[0]);
   arymarks[5]="sagar"//i have seperatelly defined array5
   console.log(arymarks[5]);//before, array5 was not defined
- 
-
   console.log("the length of array is",arymarks.length);
-
+//for loop in array
   let arysagar=["my","name","is ","sagar","arghali"];
     for  ( let i=0; i<arysagar.length; i++)  
 console.log(arysagar[i]);
@@ -172,6 +170,8 @@ console.log(arysagar[i]);
 let sap1=[1,2,3,4,5,6];
 let r=sap1.push(50)
 console.log(sap1,r);
+//shift method-same as pop but it pop out from first.
+
 
   
 
