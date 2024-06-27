@@ -49,11 +49,33 @@
 //  console.log(sap);
 
 //keep adding numbers to the array if user enters 0 terminate the program
-// let b=prompt("enter elements");
+// let b=prompt("enter elements"); //not supported in vs code to enter elements 
 // console.log(b);
 // do{
 // let c=Array.from(b)
 // let a=[1,2,3]
 // a.push(c)
 // }while(b!=0);
+
+//elements are divisiable by 10
+let arr=[10,33,50,34,75,400];
+let x=arr.filter((a)=>{
+return a%10==0;
+})
+console.log(x);
+
+//square of elements in array
+let b=arr.map((a)=>{
+  return a*a;
+})
+console.log(b);
+
+// factroial of array
+let c=arr.reduce((h1,h2)=>{
+return h1*h2;
+})
+console.log(c);
+
+
+
 
