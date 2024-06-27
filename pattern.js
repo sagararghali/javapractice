@@ -58,23 +58,54 @@
 // }while(b!=0);
 
 //elements are divisiable by 10
-let arr=[10,33,50,34,75,400];
-let x=arr.filter((a)=>{
-return a%10==0;
-})
-console.log(x);
+// let arr=[10,33,50,34,75,400];
+// let x=arr.filter((a)=>{
+// return a%10==0;
+// })
+// console.log(x);
 
-//square of elements in array
-let b=arr.map((a)=>{
-  return a*a;
-})
-console.log(b);
+// //square of elements in array
+// let b=arr.map((a)=>{
+//   return a*a;
+// })
+// console.log(b);
 
-// factroial of array
-let c=arr.reduce((h1,h2)=>{
-return h1*h2;
-})
-console.log(c);
+// // factroial of elements of array
+// let c=arr.reduce((h1,h2)=>{
+// return h1*h2;
+// })
+// console.log(c);
+
+let num=Math.random()
+function getRandomNumber(min, max) {
+  return num * (max - min) + min;
+}
+
+let number=getRandomNumber(1, 100);
+let simp=Math.floor(number)
+let count=0;
+let guess=prompt(" enter your guess");
+while(guess>=1 && guess<=100){
+   if(guess<simp){
+console.log("the right number is greater than: "+guess+" please try again");
+ guess=prompt("Again enter your guess");
+ count++;
+  }
+  else if (guess>simp){
+    console.log("the right number is smaller than: "+guess+" please try again");
+     guess=prompt("Again enter your guess");
+     count++;
+  }
+  else{
+    console.log("congratulation you have guessed right number");
+    console.log("Game over");
+    break;
+}}
+let game=100-(count*3);
+console.log("the random number was: "+simp);
+console.log("your score is: "+game);
+
+
 
 
 
