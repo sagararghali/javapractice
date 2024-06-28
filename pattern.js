@@ -111,32 +111,33 @@
 
 // rock paper scisoors
 
-function getRandomCharFromSet(charSet) {
-  const randomIndex = Math.floor(Math.random() * charSet.length);
-  return charSet[randomIndex];
-}
+// function getRandomCharFromSet(charSet) {
+//   const randomIndex = Math.floor(Math.random() * charSet.length);
+//   return charSet[randomIndex];
+// }
 
-function getRandomStringFromSet(charSet, length) {
-  let randomString = '';
-  for (let i = 0; i < length; i++) {
-    randomString += getRandomCharFromSet(charSet);
-  }
-  return randomString;
-}
+// function getRandomStringFromSet(charSet, length) {
+//   let randomString = '';
+//   for (let i = 0; i < length; i++) {
+//     randomString += getRandomCharFromSet(charSet);
+//   }
+//   return randomString;
+// }
 
-const charSet = ['rock', 'paper', 'scissors']; // Replace these with the characters you want to use
-let x=getRandomStringFromSet(charSet, 1);
- let  choice=prompt(" Are you ready to start the game?? ROLL YOUR HAND");
- if(choice==x){
-    console.log("you have won the game");
- console.log("the hand sign was: "+x);
-  }
-  else{
-console.log("you have lose the game");
-console.log("Game Over");
-console.log("the hand sign was: "+x);
-  }
+// const charSet = ['rock', 'paper', 'scissors']; // Replace these with the characters you want to use
+// let x=getRandomStringFromSet(charSet, 1);
+//  let  choice=prompt(" Are you ready to start the game?? ROLL YOUR HAND");
+//  if(choice==x){
+//     console.log("you have won the game");
+//  console.log("the hand sign was: "+x);
+//   }
+//   else{
+// console.log("you have lose the game");
+// console.log("Game Over");
+// console.log("the hand sign was: "+x);
+//   }
 
+console.log("another ");
 
 
 
