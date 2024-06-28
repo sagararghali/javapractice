@@ -76,34 +76,69 @@
 // })
 // console.log(c);
 
-let num=Math.random()
-function getRandomNumber(min, max) {
-  return num * (max - min) + min;
+
+// guess the number game
+
+// let num=Math.random()
+// function getRandomNumber(min, max) {
+//   return num * (max - min) + min;
+// }
+// let number=getRandomNumber(1, 100);
+// let simp=Math.floor(number)
+// let count=0;
+// let  guess=prompt(" enter your guess");
+// while(guess>=1 && guess<=100){
+//    if(guess<simp){
+// console.log("The right number is greater than: "+guess+" please try again");
+//  guess=prompt("Again enter your guess");
+//  count++;
+//   }
+//   else if (guess>simp){
+//     console.log("The right number is smaller than: "+guess+" please try again");
+//      guess=prompt("Again enter your guess");
+//      count++;
+//   }
+//   else{
+//     console.log("Congratulation you have guessed right number");
+//     console.log("Game over");
+//     break;
+// }
+// }
+// let game=100-(count*3);
+// console.log("the random number was: "+simp);
+// console.log("your score is: "+game);
+
+
+// rock paper scisoors
+
+function getRandomCharFromSet(charSet) {
+  const randomIndex = Math.floor(Math.random() * charSet.length);
+  return charSet[randomIndex];
 }
 
-let number=getRandomNumber(1, 100);
-let simp=Math.floor(number)
-let count=0;
-let guess=prompt(" enter your guess");
-while(guess>=1 && guess<=100){
-   if(guess<simp){
-console.log("the right number is greater than: "+guess+" please try again");
- guess=prompt("Again enter your guess");
- count++;
+function getRandomStringFromSet(charSet, length) {
+  let randomString = '';
+  for (let i = 0; i < length; i++) {
+    randomString += getRandomCharFromSet(charSet);
   }
-  else if (guess>simp){
-    console.log("the right number is smaller than: "+guess+" please try again");
-     guess=prompt("Again enter your guess");
-     count++;
+  return randomString;
+}
+
+const charSet = ['rock', 'paper', 'scissors']; // Replace these with the characters you want to use
+let x=getRandomStringFromSet(charSet, 1);
+ let  choice=prompt(" Are you ready to start the game?? ROLL YOUR HAND");
+ if(choice==x){
+    console.log("you have won the game");
+ console.log("the hand sign was: "+x);
   }
   else{
-    console.log("congratulation you have guessed right number");
-    console.log("Game over");
-    break;
-}}
-let game=100-(count*3);
-console.log("the random number was: "+simp);
-console.log("your score is: "+game);
+console.log("you have lose the game");
+console.log("Game Over");
+console.log("the hand sign was: "+x);
+  }
+
+
+
 
 
 
