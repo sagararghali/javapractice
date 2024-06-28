@@ -171,6 +171,10 @@
 // push.call(rest,55)
 // console.log(rest);
 
+document.getElementById('anyone').addEventListener('click',function(){
+  alert("hi everone my name is sagar arghali");
+});
+
 
 
  
