@@ -115,7 +115,6 @@
 //   const randomIndex = Math.floor(Math.random() * charSet.length);
 //   return charSet[randomIndex];
 // }
-
 // function getRandomStringFromSet(charSet, length) {
 //   let randomString = '';
 //   for (let i = 0; i < length; i++) {
@@ -123,7 +122,6 @@
 //   }
 //   return randomString;
 // }
-
 // const charSet = ['rock', 'paper', 'scissors']; // Replace these with the characters you want to use
 // let x=getRandomStringFromSet(charSet, 1);
 //  let  choice=prompt(" Are you ready to start the game?? ROLL YOUR HAND");
@@ -137,7 +135,25 @@
 // console.log("the hand sign was: "+x);
 //   }
 
-console.log("another ");
+//destructuring array and spread syntax
+// let arr =[1,2,3]
+// console.log(arr);
+// //converting array into object
+// let [a,b,c]=arr
+// console.log(a,b,c);
+
+//spread syntax
+// let arr=[1,2,3,4,5,6]
+// let [a,b,c,...rest]=[1,2,3,4,5,6,7]
+// console.log(...rest);
+
+//function using spread
+let arr=[4,5,6]
+let sum =(a,b,c)=>{
+  return a+b+c;
+}
+console.log(sum(...arr));
+
 
 
 
