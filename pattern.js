@@ -145,14 +145,39 @@
 //spread syntax
 // let arr=[1,2,3,4,5,6]
 // let [a,b,c,...rest]=[1,2,3,4,5,6,7]
-// console.log(...rest);
+// console.log(rest);
 
 //function using spread
-let arr=[4,5,6]
-let sum =(a,b,c)=>{
-  return a+b+c;
-}
-console.log(sum(...arr));
+// let arr=[4,5,6]
+// let sum =(a,b,c)=>{
+//   return a+b+c;
+// }
+// console.log(sum(...arr));
+
+//spread in object for replacing value 
+// let obj={
+//   name:"sagar",
+//   age:16,
+//   company:"abc"
+// }
+// console.log({...obj,name:"i am sagar"});
+
+// const [a, b, ...rest] = [1,9,5,4,6,4];
+// let { pop, push }= rest ;
+// console.log(a,b,rest);
+// let last =pop.call(rest);
+// console.log(rest); 
+// console.log(last);
+// push.call(rest,55)
+// console.log(rest);
+
+
+
+ 
+
+
+
+
 
 
 
