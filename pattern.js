@@ -171,9 +171,9 @@
 // push.call(rest,55)
 // console.log(rest);
 
-document.getElementById("anyone").addEventListener('blur',function(){
-  alert("i am sagar arghali")
-})
+// document.getElementById("mySelect").addEventListener('change',function(){
+//   alert( this.value+" is selected")
+// })
 
 
 
