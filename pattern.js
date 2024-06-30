@@ -171,9 +171,20 @@
 // push.call(rest,55)
 // console.log(rest);
 
+//onchange
 // document.getElementById("mySelect").addEventListener('change',function(){
 //   alert( this.value+" is selected")
+//   console.log("he");
 // })
+
+//onfocus
+// document.getElementById('username').addEventListener('focus', function() {
+//   this.style.backgroundColor = 'red';
+//   this.style.border = "10px solid blue";
+// });
+
+
+
 
 
 
