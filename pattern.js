@@ -193,30 +193,27 @@
 // let mon=a.getMonth()
 // console.log(h,m,s,mm,mon,d);
 
-// importing any link using script.src
-//it will import any link like <script src="link.."></script> with out knowing user
-function load(srclink,callback){
-    var script =document.createElement("script");
-    script.src=srclink;
-    //this function will notify you that script is loaded
-    script.onload=()=>{
-        console.log("script is loaded"+ srclink);
-        callback();
-    }
+// (callbacks) importing any link using script.src (it will import any link like <script src="link.."></script> with out knowing user)
+// function load(srclink,callback){
+//     var script =document.createElement("script");
+//     script.src=srclink;
+//     //this function will notify you that script is loaded
+//     script.onload=()=>{
+//         console.log("script is loaded"+ srclink);
+//         callback();
+//     }
+//     document.body.appendChild(script);
+// }
+//     fun1=()=>{
+// alert("i have loaded bootstrap link")
+//     }
+//     fun2=()=>{
+//         alert("i have loaded another link")
+//             }
+// load("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",fun2);
+// load("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",fun1);
 
-    document.body.appendChild(script);
-}
-    fun1=()=>{
-alert("i have loaded bootstrap link")
-    }
-    
-    fun2=()=>{
-        alert("i have loaded another link")
-            }
-
-
-load("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",fun2);
-load("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",fun1);
+// callbacks hell-situation in javascript where callbacks are nested within other callbacks to the degree where the code is difficult to read. old pattern to handle asynchronous functions(nowdays to prevent callback hells we use promises+async in js)
 
 
 
