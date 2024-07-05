@@ -215,44 +215,111 @@
 
 // callbacks hell-situation in javascript where callbacks are nested within other callbacks to the degree where the code is difficult to read. old pattern to handle asynchronous functions(nowdays to prevent callback hells we use promises+async in js)
 
-fun1=(callback)=>{
-setTimeout(() => {
-    console.log("fun 1 is running");
-callback();
-}, 1000);
+// fun1=(callback)=>{
+// setTimeout(() => {
+//     console.log("fun 1 is running");
+// callback();
+// }, 1000);
+// }
+
+// fun2=(callback)=>{
+// setTimeout(() => {
+//     console.log("fun 2 is running");
+// callback()
+// }, 1000);}
+
+// fun3=(callback)=>{
+// setTimeout(() => {
+//     console.log("fun 3 is running");
+// callback()
+// }, 1000);
+// }
+
+// fun4=(callback)=>{
+// setTimeout(() => {
+//         console.log("fun 4 is running");
+//     callback()
+// }, 1000);}
+
+// fun1(()=>{
+//     fun3(()=>{
+//         fun2(()=>{
+//             fun4(()=>{
+// console.log("all function has been runned");
+//             })
+//         })
+//     })
+// })
+
+//promises in asynchronous events-this is the method to withdraw the callback hell method 
+//-an object that manage asynchronous operations, there is two cases resolved or rejected, where we will be returning new promise ((resolve,reject)=>{ settimeout();}) inside the main function.
+fun1=()=>{
+return new Promise((resolve, reject)=>{
+    setTimeout(() => {
+let function1=true;
+if (function1){
+resolve("function 1 is good to go")
+}
+else{
+    reject("sorry this function cannt be run")
 }
 
-fun2=(callback)=>{
-setTimeout(() => {
-    console.log("fun 2 is running");
-callback()
-}, 1000);}
-
-fun3=(callback)=>{
-setTimeout(() => {
-    console.log("fun 3 is running");
-callback()
 }, 1000);
+});
 }
 
-fun4=(callback)=>{
-setTimeout(() => {
-        console.log("fun 4 is running");
-    callback()
-}, 1000);}
-
-fun1(()=>{
-    fun3(()=>{
-        fun2(()=>{
-            fun4(()=>{
-console.log("all function has been runned");
-            })
- 
-        })
-
-    })
-
+fun2=()=>{
+return new Promise((resolve, reject)=>{
+    setTimeout(() => {
+        let function2=true;
+        if (function2){
+        resolve("function 2 is good to go")
+        }
+        else{
+            reject("sorry this function cannt be run")
+        }    }, 1000);
 })
+}
+
+fun3=()=>{
+return new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        //by making this function false it cannt be run and at the end of the code we use catch method to display error in output
+        let function3=false;
+        if (function3){
+        resolve("function 3 is good to go")
+        }
+        else{
+            reject("sorry this function cannt be run")
+        }    }, 1000);
+})
+}
+
+fun4=()=>{
+return new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        let function4=true;
+        if (function4){
+        resolve("function 4 is good to go")
+        }
+        else{
+            reject("sorry this function cannt be run")
+        }}, 1000);
+})
+}
+fun1().then(value=>{console.log(value); return fun2()})
+      .then(value=>{console.log(value); return fun3()})
+      .then(value=>{console.log(value); return fun4()})
+      .then (value=>{console.log(value); console.log("your work has been finished");})
+      .catch(error=>console.error(error))
+           
+
+
+
+
+
+
+
 
 
 
