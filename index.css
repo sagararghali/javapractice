@@ -223,7 +223,11 @@ cursor:pointer;
         display:none ;
     }}
     
-
+.clock{
+    display: inline;
+    background-color: white;
+    align-content: left;
+}
     
   
   

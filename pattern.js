@@ -183,6 +183,40 @@
 //   this.style.border = "10px solid blue";
 // });
 
+// timedate
+// let a=new Date();
+// let h=a.getHours()
+// let m=a.getMinutes()
+// let s=a.getSeconds()
+// let mm=a.getMilliseconds()
+// let d=a.getDate()
+// let mon=a.getMonth()
+// console.log(h,m,s,mm,mon,d);
+
+// importing any link using script.src
+//it will import any link like <script src="link.."></script> with out knowing user
+function load(srclink,callback){
+    var script =document.createElement("script");
+    script.src=srclink;
+    //this function will notify you that script is loaded
+    script.onload=()=>{
+        console.log("script is loaded"+ srclink);
+        callback();
+    }
+
+    document.body.appendChild(script);
+}
+    fun1=()=>{
+alert("i have loaded bootstrap link")
+    }
+    
+    fun2=()=>{
+        alert("i have loaded another link")
+            }
+
+
+load("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",fun2);
+
 
 
 
