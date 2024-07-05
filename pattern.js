@@ -215,6 +215,45 @@
 
 // callbacks hell-situation in javascript where callbacks are nested within other callbacks to the degree where the code is difficult to read. old pattern to handle asynchronous functions(nowdays to prevent callback hells we use promises+async in js)
 
+fun1=(callback)=>{
+setTimeout(() => {
+    console.log("fun 1 is running");
+callback();
+}, 1000);
+}
+
+fun2=(callback)=>{
+setTimeout(() => {
+    console.log("fun 2 is running");
+callback()
+}, 1000);}
+
+fun3=(callback)=>{
+setTimeout(() => {
+    console.log("fun 3 is running");
+callback()
+}, 1000);
+}
+
+fun4=(callback)=>{
+setTimeout(() => {
+        console.log("fun 4 is running");
+    callback()
+}, 1000);}
+
+fun1(()=>{
+    fun3(()=>{
+        fun2(()=>{
+            fun4(()=>{
+console.log("all function has been runned");
+            })
+ 
+        })
+
+    })
+
+})
+
 
 
 
