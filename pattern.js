@@ -253,91 +253,91 @@
 
 //promises in asynchronous events-this is the method to withdraw the callback hell method 
 //-an object that manage asynchronous operations, there is two cases resolved or rejected, where we will be returning new promise ((resolve,reject)=>{ settimeout();}) inside the main function.
- fun1=()=>{
-return new Promise((resolve, reject)=>{
-    setTimeout(() => {
-let function1=true;
-if (function1){
-resolve("function 1 is good to go")
-}
-else{
-    reject("sorry this function cannt be run")
-}
+//  fun1=()=>{
+// return new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+// let function1=true;
+// if (function1){
+// resolve("function 1 is good to go")
+// }
+// else{
+//     reject("sorry this function cannt be run")
+// }
 
-}, 1000);
-});
-}
+// }, 1000);
+// });
+// }
 
-fun2=()=>{
-return new Promise((resolve, reject)=>{
-    setTimeout(() => {
-        let function2=true;
-        if (function2){
-        resolve("function 2 is good to go")
-        }
-        else{
-            reject("sorry this function cannt be run")
-        }    }, 1000);
-})
-}
+// fun2=()=>{
+// return new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+//         let function2=true;
+//         if (function2){
+//         resolve("function 2 is good to go")
+//         }
+//         else{
+//             reject("sorry this function cannt be run")
+//         }    }, 1000);
+// })
+// }
 
-fun3=()=>{
-return new Promise((resolve,reject)=>{
-    setTimeout(() => {
-        //by making this function false it cannt be run and at the end of the code we use catch method to display error in output
-        let function3=true;
-        if (function3){
-        resolve("function 3 is good to go")
-        }
-        else{
-            reject("sorry this function cannt be run")
-        }    }, 1000);
-})
-}
+// fun3=()=>{
+// return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         //by making this function false it cannt be run and at the end of the code we use catch method to display error in output
+//         let function3=true;
+//         if (function3){
+//         resolve("function 3 is good to go")
+//         }
+//         else{
+//             reject("sorry this function cannt be run")
+//         }    }, 1000);
+// })
+// }
 
-fun4=()=>{
-return new Promise((resolve,reject)=>{
-    setTimeout(() => {
-        let function4=false;
-        if (function4){
-        resolve("function 4 is good to go")
-        }
-        else{
-            reject("sorry this function cannt be run")
-        }}, 1000);
-})
-}
-// using chain method to display all function 
-// fun1().then(value=>{console.log(value); return fun2()})
-//       .then(value=>{console.log(value); return fun3()})
-//       .then(value=>{console.log(value); return fun4()})
-//       .then (value=>{console.log(value); console.log("your work has been finished");})
-//       .catch(error=>console.error(error))
+// fun4=()=>{
+// return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         let function4=false;
+//         if (function4){
+//         resolve("function 4 is good to go")
+//         }
+//         else{
+//             reject("sorry this function cannt be run")
+//         }}, 1000);
+// })
+// }
+// // using chain method to display all function 
+// // fun1().then(value=>{console.log(value); return fun2()})
+// //       .then(value=>{console.log(value); return fun3()})
+// //       .then(value=>{console.log(value); return fun4()})
+// //       .then (value=>{console.log(value); console.log("your work has been finished");})
+// //       .catch(error=>console.error(error))
 
-//OR
+// //OR
 
-//using async/await method to display all function
-async function final(){
-    try{
-        let fun1result=await fun1();
-console.log(fun1result);
+// //using async/await method to display all function
+// async function final(){
+//     try{
+//         let fun1result=await fun1();
+// console.log(fun1result);
 
-let fun2result=await fun2();
-console.log(fun2result);
+// let fun2result=await fun2();
+// console.log(fun2result);
 
-let fun3result=await fun3();
-console.log(fun3result);
+// let fun3result=await fun3();
+// console.log(fun3result);
 
-let fun4result=await fun4();
-console.log(fun4result);
+// let fun4result=await fun4();
+// console.log(fun4result);
 
-console.log("your all work has been finished");
-    }
-    catch(error){
-        console.error(error);
-    }
-}
-final()
+// console.log("your all work has been finished");
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
+// final()
            
 
 
