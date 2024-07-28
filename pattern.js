@@ -1,3 +1,6 @@
+document.getElementById('control-1').addEventListener('click', function() {
+    document.getElementById('sap-1').classList.toggle('active');
+  });
 // //loop
 // // for each
 // let num =[1,2,3,4,5,6]
